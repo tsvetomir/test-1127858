@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+    private gridData: any[];
+    public visible = true;
+
+    public toggleVisibility() {
+      this.visible = !this.visible;
+    }
 }
